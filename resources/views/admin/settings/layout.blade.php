@@ -22,12 +22,12 @@
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                         <div>
                             <label class="block font-medium mb-1">Height</label>
-                            <input type="text" name="header[height]" class="w-full border rounded px-3 py-2"
+                            <input type="number" name="header[height]" class="w-full border rounded px-3 py-2"
                                 value="{{ $data['header']['height'] ?? '' }}" placeholder="e.g. 80px" />
                         </div>
                         <div>
                             <label class="block font-medium mb-1">Padding</label>
-                            <input type="text" name="header[padding]" class="w-full border rounded px-3 py-2"
+                            <input type="number" name="header[padding]" class="w-full border rounded px-3 py-2"
                                 value="{{ $data['header']['padding'] ?? '' }}" placeholder="e.g. 10px" />
                         </div>
                         <div>
@@ -44,12 +44,12 @@
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                         <div>
                             <label class="block font-medium mb-1">Grid</label>
-                            <input type="text" name="category[grid]" class="w-full border rounded px-3 py-2"
+                            <input type="number" name="category[grid]" class="w-full border rounded px-3 py-2"
                                 value="{{ $data['category']['grid'] ?? '' }}" placeholder="e.g. 100%" />
                         </div>
                         <div>
                             <label class="block font-medium mb-1">Padding</label>
-                            <input type="text" name="category[padding]" class="w-full border rounded px-3 py-2"
+                            <input type="number" name="category[padding]" class="w-full border rounded px-3 py-2"
                                 value="{{ $data['category']['padding'] ?? '' }}" placeholder="e.g. 20px" />
                         </div>
                         
@@ -63,17 +63,17 @@
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                         <div>
                             <label class="block font-medium mb-1">Card Width</label>
-                            <input type="text" name="deal_card[width]" class="w-full border rounded px-3 py-2"
+                            <input type="number" name="deal_card[width]" class="w-full border rounded px-3 py-2"
                                 value="{{ $data['deal_card']['width'] ?? '' }}" placeholder="e.g. 300px" />
                         </div>
                         <div>
                             <label class="block font-medium mb-1">Padding</label>
-                            <input type="text" name="deal_card[padding]" class="w-full border rounded px-3 py-2"
+                            <input type="number" name="deal_card[padding]" class="w-full border rounded px-3 py-2"
                                 value="{{ $data['deal_card']['padding'] ?? '' }}" placeholder="e.g. 10px" />
                         </div>
                         <div>
                             <label class="block font-medium mb-1">Margin</label>
-                            <input type="text" name="deal_card[margin]" class="w-full border rounded px-3 py-2"
+                            <input type="number" name="deal_card[margin]" class="w-full border rounded px-3 py-2"
                                 value="{{ $data['deal_card']['margin'] ?? '' }}" placeholder="e.g. 15px" />
                         </div>
                         <div>
@@ -83,7 +83,7 @@
                         </div>
                         <div>
                             <label class="block font-medium mb-1">Border Radius</label>
-                            <input type="text" name="deal_card[border_radius]" class="w-full border rounded px-3 py-2"
+                            <input type="number" name="deal_card[border_radius]" class="w-full border rounded px-3 py-2"
                                 value="{{ $data['deal_card']['border_radius'] ?? '' }}" placeholder="e.g. 8px" />
                         </div>
 
@@ -108,12 +108,12 @@
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                         <div>
                             <label class="block font-medium mb-1">Height</label>
-                            <input type="text" name="footer[height]" class="w-full border rounded px-3 py-2"
+                            <input type="number" name="footer[height]" class="w-full border rounded px-3 py-2"
                                 value="{{ $data['footer']['height'] ?? '' }}" placeholder="e.g. 100px" />
                         </div>
                         <div>
                             <label class="block font-medium mb-1">Text Padding</label>
-                            <input type="text" name="footer[text_padding]" class="w-full border rounded px-3 py-2"
+                            <input type="number" name="footer[text_padding]" class="w-full border rounded px-3 py-2"
                                 value="{{ $data['footer']['text_padding'] ?? '' }}" placeholder="e.g. 15px" />
                         </div>
                       

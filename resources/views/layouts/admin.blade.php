@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Admin Panel</title>
-    <!-- ✅ Tailwind CDN -->
+   
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="bg-gray-100 min-h-screen">
@@ -11,8 +11,17 @@
     <nav class="bg-white shadow p-4">
         <div class="flex justify-between items-center">
             <span class="text-xl font-bold">Admin Panel</span>
+    
+           
+            <form method="POST" action="{{ url('/admin/logout') }}">
+                @csrf
+                <button type="submit" class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition">
+                    Logout
+                </button>
+            </form>
         </div>
     </nav>
+    
 
     <!-- Layout container -->
     <div class="flex">
@@ -23,8 +32,7 @@
                 <ul class="space-y-2">
                     {{-- <li><a href="#" class="block px-4 py-2 rounded hover:bg-gray-100">Dashboard</a></li> --}}
                     <li><a href="{{ route('admin.category.layout') }}" class="block px-4 py-2 rounded hover:bg-gray-100">Settings</a></li>
-                    {{-- <li><a href="#" class="block px-4 py-2 rounded hover:bg-gray-100">Users</a></li>
-                    <li><a href="#" class="block px-4 py-2 rounded hover:bg-gray-100">Reports</a></li> --}}
+                   
                 </ul>
             </div>
         </aside>
