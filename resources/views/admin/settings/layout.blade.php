@@ -43,7 +43,7 @@
                    
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                         <div>
-                            <label class="block font-medium mb-1">Grid</label>
+                            <label class="block font-medium mb-1">Grid Image Size</label>
                             <input type="number" name="category[grid]" class="w-full border rounded px-3 py-2"
                                 value="{{ $data['category']['grid'] ?? '' }}" placeholder="e.g. 100%" />
                         </div>
