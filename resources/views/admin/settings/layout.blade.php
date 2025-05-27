@@ -44,8 +44,8 @@
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                         <div>
                             <label class="block font-medium mb-1">Grid Image Size</label>
-                            <input type="number" name="category[grid]" class="w-full border rounded px-3 py-2"
-                                value="{{ $data['category']['grid'] ?? '' }}" placeholder="e.g. 100%" />
+                            <input type="number" name="category[grid_image_size]" class="w-full border rounded px-3 py-2"
+                                value="{{ $data['category']['grid_image_size'] ?? '' }}" placeholder="e.g. 100%" />
                         </div>
                         <div>
                             <label class="block font-medium mb-1">Padding</label>
